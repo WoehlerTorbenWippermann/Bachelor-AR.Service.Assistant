@@ -55,6 +55,7 @@ Everything else under `Assets/` (the various `*Example*` scenes, the flat script
 ## Prerequisites
 
 1. **Unity Hub** and **Unity 2021.3.45f2** (install this exact version).
+   - **Why this exact version:** the Microsoft HoloLens 2 deployment guides this project follows were based on Unity 2021.3.45f2.
    - When installing, add the **Universal Windows Platform (UWP) Build Support** module (required for HoloLens 2 deployment).
    - The project also references AR Foundation / ARCore packages; add **Android Build Support** only if you intend to test on Android.
    - Developed and tested with **Unity 2021.3.45f2 LTS**. Newer Unity versions (e.g. Unity 6.x LTS) are **not supported out of the box**: nothing in the project hard-locks the editor version, but upgrading would require bumping the pinned XR packages (AR Foundation, OpenXR, XR Interaction Toolkit, Input System) to their Unity 6 generation and verifying MRTK3 compatibility, which is not guaranteed.
